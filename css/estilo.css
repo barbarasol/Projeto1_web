@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    margin: auto;
+    width: auto;
+    border: 2px solid black;
+    height: 300px;
+    background-image: url("../imagens/pontejk3.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+
+nav ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+nav li{
+    text-decoration: none;
+    border: 2px solid yellow;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 5px;;
+    position: relative;
+    left: 780px;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+    color: rgb(240, 241, 145);
+}
+
+/*corpo*/
+
+#temaBussola h1{
+    font-size: 70px;
+    text-decoration: underline yellow;
+    text-align: center;
+    position: relative;
+    color: black;
+    padding-top: 10px;
+}
+
+#imgbussola{
+    position: relative;
+}
+
+#imgbussola img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#conteudo1{
+    position: relative;
+}
+
+#conteudo1 h2{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    position: relative;
+}
+
+#conteudo1 p{
+    position: relative;
+    text-align: center;
+    padding-bottom: 25px;
+    display: block;
+    padding-right: 100px;
+    padding-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.produtos li img{
+    position: relative;
+    display: block;
+    right: 20px;
+}
+
+
+.produtos li h2{
+    font-size: 30px;
+    font-weight: bold;
+    width: 270px;
+    position: relative;
+    right: 15px;
+}
+
+.produto-descricao{
+    font-size: 18px;
+    width: 250px;
+    text-align: center;
+    height: 300px;
+}

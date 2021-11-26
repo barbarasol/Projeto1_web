@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de Avaliação das matérias e eventos.">
+    <meta name="author" content="Bárbara Sol, Gabriel Duarte e Gabriel Bezerra"> 
+    <title>Avaliação</title>
+    <link rel="stylesheet" href="css/estiloAvaliacao.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="usuario.html">Usuário</a></li>
+                <li><a href="materias.html">Matérias</a></li>
+                <li><a href="bussola.html">Bússola</a></li>
+                <li><a href="documentacao.html">Documentação</a></li>
+            </ul>
+        </nav>
+        <div id="temaAvaliacao">
+            <h1>Avaliação</h1>
+        </div>
+    </header>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Avaliação</b> </legend>
+                <p>Selecione qual deseja avaliar:</p>
+                <input type="radio" id="materias" name="tipo" value="materias" required>
+                <label for="materias">Matérias</label><br>
+                <input type="radio" id="eventos" name="tipo" value="eventos" required>
+                <label for="eventos">Eventos</label>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="titulo" id="titulo" class="inputUser" required>
+                    <label for="titulo" class="labelInput">Título</label>
+                </div>
+                <br> <br>
+                <div class="inputBox">
+                    <input type="text" name="comentario" id="comentario" class="inputUser" required>
+                    <label for="comentario" class="labelInput">Comentário</label>
+                </div>
+                <br> 
+                <label for="dataPublicacao">Data:</label>
+                <input type="date" name="dataPublicacao" id="dataPublicacao" required>
+                <br><br>
+                <label for="anexarImagem">Adicionar imagens:</label><br><br>
+                <input type="file" name="anexarImagem" accept="image/*" multiple>  
+                <br><br>
+                <label for="notaAvaliacao">Deixe a sua avaliação:</label>
+                <input type="range" name="notaAvaliacao" min="0" max="5" value="2" id="valorAvaliacao" required>
+                <br><br>
+                <input type="reset" name="reset" id="reset">
+                <br> <br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

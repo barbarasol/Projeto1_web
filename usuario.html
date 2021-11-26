@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de Cadastro dos Usuários.">
+    <meta name="author" content="Bárbara Sol, Gabriel Duarte e Gabriel Bezerra"> 
+    <title>Usuário</title>
+    <link rel="stylesheet" href="css/estiloUsuario.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="usuario.html">Usuário</a></li>
+                <li><a href="materias.html">Matérias</a></li>
+                <li><a href="bussola.html">Bússola</a></li>
+                <li><a href="documentacao.html">Documentação</a></li>
+            </ul>
+        </nav>
+        <div id="tema">
+            <h1>Usuário</h1>
+        </div>
+    </header>
+    
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Cadastro Usuário</b> </legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput"> Nome completo</label>
+                </div>
+                <br> <br>
+                <div class="inputBox">
+                    <input type="text" name="nacionalidade" id="nacionalidade" class="inputUser" required>
+                    <label for="nacionalidade" class="labelInput"> Nacionalidade</label>
+                </div>
+                <br> <br>
+                <div class="inputBox">
+                    <input type="email" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput"> Email</label>
+                </div>  
+                <p>Deseja receber notificações:</p>
+                <input type="radio" id="sim" name="notificacao" value="sim" required>
+                <label for="sim">Sim</label><br>
+                <input type="radio" id="nao" name="notificacao" value="nao" required>
+                <label for="nao">Não</label>
+                <br> <br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
